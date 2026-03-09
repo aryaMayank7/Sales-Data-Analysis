@@ -50,7 +50,7 @@ The project utilizes a robust Star Schema data model to ensure data integrity an
 
 ## 6. Dashboard Preview
 
-![Sales Dashboard Preview](your_image_path_here.png)
-![Sales Dashboard Preview](your_image_path_here.png)
-![Sales Dashboard Preview](your_image_path_here.png)
-![Sales Dashboard Preview](your_image_path_here.png)
+![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%201.png)
+![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%202.png)
+![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%203.png)
+![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%204.png)
