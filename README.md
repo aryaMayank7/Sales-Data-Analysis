@@ -1,54 +1,70 @@
-# 📊 Sales Performance & Insights Dashboard
+# 📊 Sales Performance & Inventory Insights Dashboard
 
-A comprehensive, interactive data visualization tool built to analyze retail sales performance—focusing on revenue trends, product categories, regional performance, and profit margins.
+A comprehensive, interactive Power BI suite designed to track retail performance, analyze promotional effectiveness, and monitor product-level profitability across various Indian cities.
 
 ---
 
-## 1. Project Purpose
-The **Sales Data Analysis Dashboard** is designed to transform raw transactional data into actionable business intelligence. It allows stakeholders to monitor key performance indicators (KPIs) and identify growth opportunities across different product lines and geographic regions. This tool is intended for sales managers, retail analysts, and business owners who need to make data-driven decisions to optimize inventory and marketing strategies.
+## 📝 Short Description / Purpose
+The **Sales Performance & Inventory Insights Dashboard** is a multi-page analytical tool built to transform raw transactional data into actionable business intelligence. It allows stakeholders to monitor high-level KPIs, compare period-over-period performance, and drill down into specific product successes or failures. This tool is intended for retail managers and financial analysts to optimize discount strategies and regional sales efforts.
 
-## 2. Tech Stack
-* **📊 Power BI Desktop** – Primary platform for data visualization and report design.
-* **📂 Power Query** – Utilized for ETL (Extract, Transform, Load) processes, cleaning messy sales records, and formatting date/currency fields.
-* **🧠 DAX (Data Analysis Expressions)** – Used to create sophisticated measures such as Year-over-Year (YoY) growth, Total Revenue, Profit Margins, and Top-performing products.
-* **📝 Data Modeling** – Established a Star Schema involving Fact tables (Sales) and Dimension tables (Products, Customers, Regions, and Calendar) to ensure high performance and accurate cross-filtering.
+---
 
-## 3. Data Source
-* **Source:** The dataset includes historical sales transactions, product catalogs, and customer demographic information.
-* **Structure:** The data covers multiple years of transactions, detailing:
-    * **Sales:** Quantity sold, unit price, discounts, and order dates.
-    * **Products:** Category, sub-category, and SKU details.
-    * **Geography:** Country, State, and City level data.
+## 🛠 Tech Stack
+The dashboard was built using the following tools and technologies:
 
-## 4. Features / Highlights
+* **📊 Power BI Desktop** – Main data visualization platform used for report creation and canvas design.
+* **📂 Power Query** – Used for data cleaning, specifically for handling date formats and merging promotional metadata.
+* **🧠 DAX (Data Analysis Expressions)** – Utilized for complex measures like "Net Sales," "Total Profit," and time-intelligence comparisons.
+* **📝 Data Modeling** – A Star Schema approach connecting Sales, Products, Customers, and Date tables to enable seamless cross-filtering.
+* **📁 File Format** – `.pbix` for development and `.png` for dashboard previews.
 
-### 🔴 Business Problem
-Retail businesses often struggle to see the "big picture" when buried in spreadsheets. Identifying which products are underperforming or which regions are driving the most profit is time-consuming without a centralized visual hub.
+---
 
-### 🎯 Goal of the Dashboard
-* To provide a high-level overview of sales health at a glance.
-* To enable "drill-down" analysis into specific product categories.
-* To track profitability and identify cost-saving opportunities.
+## 📂 Data Source
+* **Source:** Internal Retail Management System (ERP) and Promotional Logs.
+* **Structure:** The dataset includes over **3,510 orders** spanning from 2020 to 2024. It tracks 12+ variables including City, Product Category, Discount Value, Net Sales, and Profit margins.
 
-### 🔍 Walkthrough of Key Visuals
-* **Executive KPIs:** High-visibility cards showing **Total Sales, Total Profit, and Total Quantity Sold**.
-* **Sales Trend (Line Chart):** A temporal analysis showing sales fluctuations over months and years, helping to identify seasonal peaks.
-* **Product Category Analysis (Donut/Pie Chart):** Visualizes the contribution of different categories (e.g., Electronics, Clothing) to the total revenue.
-* **Regional Performance (Map/Bar Chart):** Highlights top-performing regions and cities, allowing for targeted regional marketing.
-* **Profitability by Sub-Category (Waterfall/Bar Chart):** Breaks down which specific items are the most lucrative vs. those with thin margins.
-* **Top 5 Customers/Products:** Identifies key drivers of revenue to help in loyalty program management or inventory stocking.
+---
 
-### 💡 Business Impact & Insights
-* **Inventory Management:** Spot slow-moving products early to avoid overstocking.
-* **Revenue Growth:** Identify high-performing regions to double down on local advertising.
-* **Strategic Pricing:** Use profit margin data to adjust pricing strategies on low-margin sub-categories.
+## ✨ Features / Highlights
 
-## 5. Data Model Schema
+### 1. Business Problem
+Retailers often struggle to identify which promotions actually drive profit versus those that only drive volume. Additionally, understanding geographic sales distribution and identifying "bleeding" products (low profit) is difficult without a centralized view.
+
+**Key questions addressed:**
+* Which cities are our primary revenue drivers?
+* Are high discounts in "Weekend Flash Sales" translating to sustainable profit?
+* Which products are high-volume but low-margin?
+
+### 2. Goal of the Dashboard
+* To provide a **geospatial view** of sales across India.
+* To evaluate the **ROI of different promotion categories**.
+* To enable **comparative analysis** between two custom date ranges.
+* To identify the **Top and Bottom 5 performers** across Sales, Quantity, and Profit.
+
+### 3. Walkthrough of Key Visuals
+* **Sales by City (Map):** A bubble map showing heavy sales concentration in northern and western India (Delhi, Ahmedabad, Mumbai).
+* **Average Discount by Promotion:** A bar chart revealing that "Weekend Flash Sales" carry the highest discount burden (22.6K), while "Festive Diwali" remains conservative.
+* **Relationship between Profit and Sales (Scatter Plot):** Shows a strong linear correlation, indicating stable margins across most transactions.
+* **Top/Bottom 5 Product Analysis:**
+    * **Top Performer:** Apple iPhone 14 (leading in Sales, Quantity, and Profit).
+    * **Underperformer:** Colgate Toothpaste (lowest sales/profit contribution).
+* **Comparative Analysis Page:** Side-by-side bar charts allowing users to compare "Sales 1 vs Sales 2" across different time buckets.
+* **Granular Transaction Table:** A detailed list view showing individual Order IDs, Discount Percentages, and Net Sales for auditing.
+
+### 4. Business Impact & Insights
+* **Inventory Optimization:** High-volume/low-profit items (like certain toiletries) can be identified for potential price restructuring.
+* **Regional Strategy:** Data suggests a strong market presence in Bhopal and Indore; marketing spend could be shifted to lower-performing bubbles like Chennai to balance growth.
+* **Promotion Rationalization:** By comparing "Weekend Flash Sale" discounts against the Net Sales trend, management can decide if the 22.6K average discount is generating a sufficient sales spike.
+
+---
+
+## Data Model Schema
 The project utilizes a robust Star Schema data model to ensure data integrity and fast calculation speeds.
 
+---
 
-
-## 6. Dashboard Preview
+## Dashboard Preview
 
 ![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%201.png)
 ![Sales Dashboard Preview](https://github.com/aryaMayank7/Sales-Data-Analysis/blob/main/Sales%20Data%20Analysis%20Dashboard%202.png)
