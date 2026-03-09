@@ -1,4 +1,4 @@
-## SALES DATA ANALYSIS
+# SALES DATA ANALYSIS
 
 📊 Sales Performance & Insights Dashboard
 A comprehensive, interactive data visualization tool built to analyze retail sales performance—focusing on revenue trends, product categories, regional performance, and profit margins.
@@ -63,3 +63,4 @@ Strategic Pricing: Use profit margin data to adjust pricing strategies on low-ma
 The project utilizes a robust data model to ensure data integrity and fast calculation speeds.
 
 6. Dashboard Preview
+()
