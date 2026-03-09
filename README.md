@@ -1,3 +1,5 @@
+## SALES DATA ANALYSIS
+
 📊 Sales Performance & Insights Dashboard
 A comprehensive, interactive data visualization tool built to analyze retail sales performance—focusing on revenue trends, product categories, regional performance, and profit margins.
 
